@@ -9,7 +9,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 // This is a <canvas> element the renderer uses to display the scene to us.
 document.body.appendChild(renderer.domElement);
 
-//--------------
+//------------------------------------------------------------------------------
 // Making a cube
 var geometry = new THREE.BoxGeometry(1,1,1);
 var material = new THREE.MeshBasicMaterial({color : 0x00ff00});
@@ -17,7 +17,7 @@ var material = new THREE.MeshBasicMaterial({color : 0x00ff00});
 // which we then can insert to our scene, and move freely around.
 var cube = new THREE.Mesh(geometry, material);
 
-//--------------
+//------------------------------------------------------------------------------
 // Add the cube to scene
 scene.add(cube);
 // The thing you add is added to coordinates 0,0,0 by default.
